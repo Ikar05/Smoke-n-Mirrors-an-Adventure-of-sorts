@@ -1,0 +1,57 @@
+<style>
+  body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    cursor: url(images/cursors/rainbow/0.gif), auto;
+  }
+</style>
+
+<body data-num="0"></body>
+
+<script>
+
+  function aniCursor () {    
+    const num = document.body.dataset.num
+    const val = `url(images/cursors/rainbow/${num}.gif), auto`
+    document.body.style.cursor = val
+    
+    const max = 22 // largest number in my set of images
+    let nextVal = Number(document.body.dataset.num) + 1
+    if (nextVal > max) nextVal = 0
+    document.body.dataset.num = nextVal
+
+    const delay = 100 // speed in milliseconds
+    setTimeout(aniCursor, delay)
+  }
+  
+  window.addEventListener('load', aniCursor)
+</script>
+<!DOCTYPE html>
+<html>
+  
+ <head>
+  <tite>Wanna see something cool? Bossa-nova even?</tite> 
+  </head>
+  
+ <body>
+    <p>
+      What are you waiting for? 
+    </p>
+  </body>
+</html> 
+<body style="background-color:Mediumseagreen;">
+
+<h1 style="color:white;">sErIoUsLy, YoU'rE sTiLl HeRe?</h1>
+<p>Time's a waistin!</p>
+Just click here already - 
+  <a href="https://www.youtube.com/watch?v=zJJvVLuM6fw">C'MON</a>
+  <br><br><br><br>
+  <img src="https://huong.github.io/gif/gif/koye2.gif"/>
+  <br><br><br><br>
+  <h1 style="color:white;">...Too much for you?</h1>
+  <a href="">THEN CHECK THIS OUT!</a>
+  <img src=""/>
+  <br><br><br><br>
+  
+</body>
